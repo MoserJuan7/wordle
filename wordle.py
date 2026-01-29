@@ -8,9 +8,9 @@ intentos_maximos= 6 #----> definimos con una variable los intentos maximos
 intentos_reaizados= 0 #----> establecemos el contador de intentos
 
 while intentos_reaizados < intentos_maximos :  #----> creamos el bucle para dar logica al juego
-    
+
     intentos= input('Ingrese una palabra de 5 letras').upper()
 
-    if len(intentos) != 5 or not intentos.isalpha():
+    if len(intentos) != 5 or not intentos:    #----> generamos la funcion si 'if'
         print("Intento inválido. Debe ser una palabra de 5 letras.")
         continue  # Vuelve al inicio del bucle
